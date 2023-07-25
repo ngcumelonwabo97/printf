@@ -19,9 +19,9 @@ int _printf(const char *format, ...)
 
 	va_start(list, format);
 
-	for (i = 0; format && format[d] != '\0'; i++)
+	for (i = 0; format && format[i] != '\0'; i++)
 	{
-		if (format[d] != '%')
+		if (format[i] != '%')
 		{
 			buffer[buff_ind++] = format[i];
 			if (buff_ind == BUFF_SIZE)
